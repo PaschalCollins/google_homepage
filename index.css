@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*  
+    Making the navigation and footer to be in horizontal form.
+    Removing the bullet, padding and margin on the list
+*/
+nav, footer{
+    display: flex;
+    justify-content: space-between;
+}
+.left ul, .right ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.left ul li, .right ul li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+    Positioning the main to the center.
+    Styling the search bar.
+*/
+
+main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.form{
+    height: 45px;
+    width: 600px;
+    border-radius: 50px;
+    border: 1px solid #cfcece;
+    margin: 30px 0px;
+}
+.form input{
+    height: 42px;
+    width: 520px;
+    border: none;
+}
+.search-icon{ 
+    position: absolute;
+    right: 95%;
+    top: 48%;
+    height: 20px;
+    opacity: 0.5;
+}
+
+/*
+    Styling the the footer section.
+*/
+footer{
+    position: absolute;
+    top: 600px;
+}
+footer .right{
+    position: relative;
+    left: 163%;
+}
+
+/*
+    Styling the the texts and links.
+*/
+.below-search a{
+    color: rgb(100, 98, 98);
+    background-color: rgb(247, 245, 245);
+    border: 1px solid  rgb(235, 235, 235);
+    border-radius: 5px;
+    margin-left: 25px;
+    padding: 10px;
+}
+p{
+    margin-top: 40px;
+    padding-left: 16px;
+}
+p > a{
+    color: rgb(96, 96, 238);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(77, 76, 76);
+}
+a:hover{
+    text-decoration: underline;
+}
+ .form:hover{
+     box-shadow: 2px 1px rgba(0, 0, 0, 0.2), -2px -1px rgba(0, 0, 0, 0.2) ;
+ }
+ 
+ input[type="text"], select{
+    outline: none;
+ }
+ .below-search a:hover{
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+    background-color: rgb(228, 227, 227);
+ }

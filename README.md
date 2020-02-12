@@ -1,1 +1,1 @@
-Creating a google homepage
+Sample clone of google home page.
